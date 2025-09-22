@@ -1,6 +1,12 @@
 import { useState } from "react";
 import "./App.css";
 import FruitList from "./components/FruitList";
+import BirthdayTranslator from "./components/BirthdayTranslator";
+import Weather from "./components/Weather";
+import CheckWeather from "./components/CheckWeather";
+import Temperature from "./components/Temperature";
+import LoginForm from "./components/LoginForm";
+
 function App() {
   const [fruits, setFruits] = useState([
     { id: 1, name: "Apple", color: "Red" },
@@ -19,6 +25,11 @@ function App() {
     <>
       <FruitList fruitList={fruits}></FruitList>
       <button onClick={reverseFruitList}>Reverse</button>
+      <BirthdayTranslator></BirthdayTranslator>
+      <Weather></Weather>
+      <Temperature></Temperature>
+      <CheckWeather></CheckWeather>
+      <LoginForm></LoginForm>
     </>
   );
 }
